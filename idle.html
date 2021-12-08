@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="idlestyles.css" />
+		<title>Button Masher</title>
+	</head>
+	<body>
+		<h1 id="title">BUTTON MASHER</h1>
+		<hr id="titlehr" />
+		<div id="page">
+			<div id="buy">
+				<div id="score">
+					<h2>Points:</h2>
+					<p id="points"></p>
+				</div>
+				<button id="add" onclick="btnclick()">MASH THE BUTTON!</button>
+				<p id="keypress">
+					Hitting a key on your keyboard will also mash the button.
+				</p>
+				<div id="purchase">
+					<hr />
+					<p>Buy an auto masher for <span id="autocost"></span> points</p>
+					<button id="buyauto" onclick="buyclicker()">Buy</button>
+					<hr />
+					<p>Buy a super masher for <span id="supermasher"></span></p>
+					<button onclick="buysuper()" id="buysuper">Buy</button>
+					<hr />
+				</div>
+				<div id="upgrade">
+					<hr />
+					<p>Upgrade button click for <span id="btnupcost"></span> points</p>
+					<button onclick="increasemash()" id="upbtn">Upgrade</button>
+					<hr />
+					<p>
+						Increase mashing rate of auto mashers for
+						<span id="upmash"></span> points
+					</p>
+					<button onclick="autorateup()" id="mashrate">Upgrade</button>
+					<hr />
+					<p>
+						Upgrade mashing rate of super mashers for
+						<span id="upsupercost"></span>
+					</p>
+					<button onclick="upsuperrate()" id="supercostup">Upgrade</button>
+					<hr />
+				</div>
+			</div>
+			<div id="stats">
+				<p>Points Per Second: <span id="pps"></span></p>
+				<br />
+				<p>Points Per Mash: <span id="ppm"></span></p>
+				<br />
+				<p id="countclk">Masher Count: <span id="clkcount"></span></p>
+				<br />
+				<p>Points Per Masher: <span id="ppctn"></span></p>
+				<br />
+				<p>Super Masher Count: <span id="supercount"></span></p>
+				<br />
+				<p>Points Per Super Masher: <span id="ppsuper"></span></p>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
